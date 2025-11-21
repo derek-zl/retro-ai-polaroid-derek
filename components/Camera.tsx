@@ -157,7 +157,7 @@ export const Camera: React.FC<CameraProps> = ({ onCapture, isProcessing }) => {
             </button>
             
             <div className="font-black text-rose-300 text-lg italic tracking-tighter">
-                instax <span className="text-xs not-italic font-normal bg-rose-400 text-white px-1 rounded">AIR</span>
+                instax <span className="text-xs not-italic font-normal bg-rose-400 text-white px-1 rounded">RETRO</span>
             </div>
 
             {/* Flash */}

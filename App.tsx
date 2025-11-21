@@ -1,3 +1,4 @@
+
 import React, { useState, useRef } from 'react';
 import { Camera } from './components/Camera';
 import { Polaroid } from './components/Polaroid';
@@ -49,7 +50,7 @@ const App: React.FC = () => {
       setIsProcessing(false);
     }, 3000); 
 
-    // 4. Fetch AI Caption in background
+    // 4. Fetch Caption (Now from Presets)
     try {
       const caption = await generatePhotoCaption(dataUrl);
       setPhotos((prev) =>
@@ -138,7 +139,7 @@ const App: React.FC = () => {
 
       {/* Footer / Credits */}
       <div className="absolute bottom-2 right-4 text-gray-400 text-xs font-mono z-10">
-        Powered by Gemini 2.5
+        Retro Cam v1.0
       </div>
     </div>
   );
